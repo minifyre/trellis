@@ -1,0 +1,8 @@
+#ignore all (don't pull in child-repos)
+*
+
+!.gitignore
+!LICENSE
+!package.json
+!package-lock.json
+!README.md

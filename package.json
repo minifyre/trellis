@@ -1,0 +1,17 @@
+{
+	"name": "trellis",
+	"description": "A minimal \"monorepo\" to centralize devDependencies & the build pipeline of related repos.",
+	"homepage": "https://github.com/minifyre/trellis",
+	"license": "MIT",
+	"version": "0.1.0",
+	"scripts": {
+		"build": "npm run build:dev && npm run test",
+		"build:dev": "rollup -c",
+		"test": "c8 --reporter=html --reporter=lcov --reporter=text node --experimental-modules ./src/index.test.js"
+	},
+	"devDependencies": {
+		"c8": "^5.0.4",
+		"rollup": "^1.21.4",
+		"rollup-plugin-terser": "^5.1.2"
+	}
+}
